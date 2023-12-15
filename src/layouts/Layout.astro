@@ -1,0 +1,109 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="relative  min-h-screen">
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&family=Work+Sans&display=swap');
+
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: "Work Sans", sans-serif;
+		background: #13151a;
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+
+	@keyframes rainbow-text {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes glowing-text {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #ff00de,
+      0 0 20px #ff00de,
+      0 0 25px #ff00de,
+      0 0 30px #ff00de,
+      0 0 35px #ff00de;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #ff00de,
+      0 0 30px #ff00de,
+      0 0 40px #ff00de,
+      0 0 50px #ff00de,
+      0 0 60px #ff00de,
+      0 0 70px #ff00de;
+  }
+}
+@keyframes move-horizontally {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.glowing-rainbow-text {
+  animation: rainbow-text 6s ease-in-out infinite alternate,
+             glowing-text 2s ease-in-out infinite alternate;
+            
+	white-space: nowrap;
+}
+
+.glowing-rainbow-text-moving {
+  animation: rainbow-text 6s ease-in-out infinite alternate,
+             glowing-text 2s ease-in-out infinite alternate,
+             move-horizontally 10s linear infinite;
+	white-space: nowrap;
+}
+
+
+</style>

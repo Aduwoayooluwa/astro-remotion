@@ -1,0 +1,21 @@
+.game-card:hover {
+  animation: shake 0.5s ease-in-out;
+}
+.game-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}

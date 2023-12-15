@@ -1,0 +1,24 @@
+---
+import { useState, useEffect } from 'react';
+
+export const useQuestions = (url = "/json/questions.json") => {
+    const [questions, setQuestions] = useState([]);
+
+    useEffect(() => {
+        const fetchQuestions = async () => {
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                setQuestions(data.cards);
+            } catch (error) {
+                console.error('Failed to fetch questions:', error);
+            }
+        };
+
+        fetchQuestions();
+    }, [url]);
+
+    return questions;
+};
+
+---

@@ -1,0 +1,40 @@
+{
+  "name": "shege-unwrapped",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.2",
+    "@astrojs/react": "^3.0.7",
+    "@astrojs/tailwind": "^5.0.3",
+    "@remotion/cli": "^4.0.77",
+    "@remotion/gif": "^4.0.77",
+    "@remotion/google-fonts": "^4.0.77",
+    "@remotion/player": "^4.0.77",
+    "@remotion/shapes": "^4.0.77",
+    "@remotion/transitions": "^4.0.77",
+    "@types/react": "^18.2.44",
+    "@types/react-dom": "^18.2.17",
+    "astro": "^4.0.4",
+    "canvas-confetti": "^1.9.2",
+    "framer-motion": "^10.16.16",
+    "i": "^0.3.7",
+    "npm": "^10.2.5",
+    "react": "^18.2.0",
+    "react-canvas-confetti": "^1.4.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "remotion": "^4.0.77",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4"
+  }
+}

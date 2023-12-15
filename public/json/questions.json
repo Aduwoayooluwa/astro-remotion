@@ -1,0 +1,74 @@
+{
+  "cards": [
+    {
+        "id": 1001,
+        "question": "What's your social media handle/username",
+        "type": "text",
+        "hint": "E.g., codingpastor",
+        "name": "username"
+    },
+    {
+      "id": 1,
+      "question": "What was the most unforgettable event of your year?",
+      "type": "text",
+      "hint": "E.g., Graduation, a special trip, or a big move.",
+      "name": "unforgettable_moment"
+    },
+    {
+      "id": 2,
+      "question": "Name a song that kept you going in 2023!",
+      "type": "text",
+      "hint": "This could be your personal anthem for the year.",
+      "name": "fav_song"
+    },
+    {
+      "id": 3,
+      "question": "Choose an emoji that best describes your year. 🌟",
+      "type": "emoji",
+      "hint": "Just one that captures the essence!",
+      "name": "best_emoji"
+    },
+    {
+      "id": 4,
+      "question": "What new skill did you learn or improve on?",
+      "type": "text",
+      "hint": "Cooking? Coding? Art? Skydiving?",
+      "name": "new_skill"
+    },
+    {
+      "id": 5,
+      "question": "Who was your biggest supporter this year?",
+      "type": "text",
+      "hint": "A friend, family member, mentor, or maybe your pet?",
+      "name": "biggest_supporter"
+    },
+    {
+      "id": 6,
+      "question": "Share a small victory you celebrated!",
+      "type": "text",
+      "hint": "We love to celebrate all wins, big or small.",
+      "name": "small_win"
+    },
+    {
+      "id": 7,
+      "question": "If you could sum up your year in one word, what would it be?",
+      "type": "text",
+      "hint": "Choose wisely!",
+      "name": "year_in_a_word"
+    },
+    {
+      "id": 8,
+      "question": "What's a lesson 2023 taught you?",
+      "type": "text",
+      "hint": "Every experience teaches us something.",
+      "name": "lesson_of_year"
+    },
+    {
+      "id": 9,
+      "question": "What are you looking forward to most in 2024?",
+      "type": "text",
+      "hint": "Goals, plans, dreams...",
+      "name": "goals_2024"
+    }
+  ]
+}

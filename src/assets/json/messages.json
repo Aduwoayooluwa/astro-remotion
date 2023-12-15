@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "userId": 101,
+    "text": "Hello, how are you?",
+    "timestamp": "2023-12-13T09:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "userId": 102,
+    "text": "I'm doing well, thanks!",
+    "timestamp": "2023-12-13T09:05:00.000Z"
+  },
+  {
+    "id": 3,
+    "userId": 101,
+    "text": "Glad to hear that. Are you coming to the meeting tomorrow?",
+    "timestamp": "2023-12-13T09:10:00.000Z"
+  }
+]

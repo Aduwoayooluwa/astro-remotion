@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import GameCard from "../app/components/Card";
+import Earth, { Forest } from "../assets/images/Earth"
+import ChristmasPlaylist from "../app/components/ChristmasPlaylist";
+---
+
+<Layout title="Welcome to Astro.">
+	<nav class="p-6 bg-black shadow-md h-[70px] w-full">
+		<p class="absolute  text-white text-lg font-semibold ">Your {new Date().getUTCFullYear()} Wrapped</p>
+		
+	</nav>
+	<Earth />
+	<main class="p-4 mt-0 gap-6 md:mt-20 w-full grid grid-cols-1 md:grid-cols-2 h-full place-items-center">
+		<GameCard client:load />
+		<ChristmasPlaylist />
+	</main>
+	
+	<Forest />
+	<footer class="">
+		
+		<img  src={"/city_life.gif"} class="flex md:hidden" alt="life image"/>
+
+		<p class="text-white text-sm text-center font-semibold py-2">Made with 💖 by <a href="https://github.com/aduwoayooluwa" target="_blank">Coding Pastor</a></p>
+	</footer>
+</Layout>
+

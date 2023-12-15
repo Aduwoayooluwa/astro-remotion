@@ -1,0 +1,43 @@
+.stat-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; 
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #1db954, #1e3264);
+}
+
+.stat-card {
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 600px;
+  height: 600px;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.stat-card h2 {
+  font-size: 70px;
+}
+.stat-card p {
+  font-size: 50px;
+  font-weight: normal;
+}
+.stat-card:hover {
+  transform: scale(1.05);
+}
