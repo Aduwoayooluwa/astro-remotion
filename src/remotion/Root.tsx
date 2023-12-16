@@ -1,6 +1,6 @@
 import React from "react";
 import { Composition, Folder, Still } from "remotion";
-import Wrap from "./Wrap";
+import {Wrap} from "./Wrap";
 
 
 const Root: React.FC = () => {

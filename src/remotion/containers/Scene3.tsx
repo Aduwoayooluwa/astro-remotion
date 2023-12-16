@@ -2,11 +2,14 @@ import React from 'react'
 import { AbsoluteFill } from 'remotion'
 import AchievementsImg from '../assets/AchievementsImg'
 import { fontFamily } from '../components/Background'
+import { useManageForm } from '../../context/ManageFormContext'
 // achievements scene
 
 type Props = {}
 
 const Scene3 = (props: Props) => {
+  const { formDetails } = useManageForm();
+  
   return (
       <AbsoluteFill
         style={{
@@ -19,7 +22,7 @@ const Scene3 = (props: Props) => {
            <h2 style={{
               textAlign: "center",
               fontSize: 90
-          }}>Your Acomplishments</h2>
+      }}>Congratulations on your { formDetails?.unforgettable_moment} 😍</h2>
           <AchievementsImg />
     </AbsoluteFill>
   )

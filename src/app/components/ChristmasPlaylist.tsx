@@ -7,7 +7,7 @@ const ChristmasPlaylist = () => {
         height="380" 
         frameBorder="0" 
         allowTransparency={true}
-              allow="encrypted-media"
+        allow="encrypted-media" 
           
           >
               

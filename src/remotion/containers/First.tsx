@@ -1,18 +1,11 @@
-import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion"
+import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion"
 import Car from "../../assets/images/car_moving.gif"
+import { useManageForm } from "../../context/ManageFormContext";
 
 export function MovingCar() {
     const frame = useCurrentFrame();
 
-    const planetSize = interpolate(frame, [80, 180], [1200, 0], {
-        extrapolateRight: "clamp",
-        easing: Easing.inOut((t) => t),
-    });
-
-    const planetY = interpolate(frame, [80, 180], [700, 0], {
-        extrapolateRight: "clamp",
-        easing: Easing.inOut((t) => t),
-    });
+    const { formDetails } = useManageForm()
 
      const carX = interpolate(frame, [0, 240], [-600, 1920], {
         extrapolateRight: 'clamp',
@@ -34,7 +27,7 @@ export function MovingCar() {
                 backgroundColor: 'black',
                 bottom:0
             }} />
-
+            <p>Hello { formDetails?.username ?? "" }</p>
             <img
             src={Car as any}
             style={{

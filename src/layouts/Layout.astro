@@ -17,6 +17,10 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="relative  min-h-screen">
+		<nav class="p-6 bg-black shadow-md h-[70px] w-full">
+		<p class="absolute  text-white text-lg font-semibold ">Your {new Date().getUTCFullYear()} Wrapped</p>
+		
+		</nav>
 		<slot />
 	</body>
 </html>
@@ -109,3 +113,4 @@ const { title } = Astro.props;
 
 
 </style>
+

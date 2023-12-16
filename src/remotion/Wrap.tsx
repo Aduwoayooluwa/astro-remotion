@@ -14,7 +14,7 @@ import { wipe } from "@remotion/transitions/wipe";
 import { clockWipe } from "@remotion/transitions/clock-wipe";
 import { MovingCar } from "./containers/First";
 
-export default function Wrap() {
+export function Wrap() {
     const { width, height } = useVideoConfig();
 
     return (

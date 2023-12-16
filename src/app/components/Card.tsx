@@ -24,11 +24,18 @@ const GameCard = () => {
     const questions = useQuestions();
 
   const nextQuestion = () => {
-    setCurrentQuestionIndex((prevIndex) => 
-      prevIndex < questions.length - 1 ? prevIndex + 1 : 0
-    );
-    };
+    
+      if (currentQuestionIndex === questions.length - 1) {
+        console.log("End")
+        return;
+      }
 
+      setCurrentQuestionIndex((prevIndex) => 
+      prevIndex < questions.length - 1 ? prevIndex + 1 : 0
+      );
+
+    };
+console.log({currentQuestionIndex, length: questions?.length})
   return (
     <div className="relative overflow-hidden">
           <AnimatePresence>
@@ -53,7 +60,7 @@ const GameCard = () => {
                           required
                     placeholder={questions[currentQuestionIndex]?.hint}
                     className='border-2 w-full border-gray-300 bg-white rounded-md p-1 outline-none focus:border-[#FFC727] focus:ring focus:ring-[#fbe7af] focus:ring-opacity-50' />    
-                <button  onClick={nextQuestion} className="bg-[#FFC727] my-5 w-full text-white hover:bg-[#cf9f1c] rounded-lg p-2">Next</button>      
+                <button  onClick={nextQuestion} className="bg-[#FFC727] my-5 w-full text-white hover:bg-[#cf9f1c] rounded-lg p-2">{questions.length-1 === currentQuestionIndex ? "Render" : "Next"}</button>      
             </form>
           
           

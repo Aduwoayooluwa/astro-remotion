@@ -2,7 +2,7 @@ import React from 'react'
 
 const Earth = () => {
   return (
-      <div className='absolute left-0 md:left-20 top-20 md:top-28'>
+      <div className='absolute z-40 left-0 md:left-20 top-20 md:top-28'>
         <img className='w-40 opacity-40 md:opacity-100' src={"/earth.svg"} />
       </div>
   )
